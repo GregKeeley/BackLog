@@ -18,6 +18,7 @@
 		C161FB0D238097CA006184E8 /* Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161FB0C238097CA006184E8 /* Platforms.swift */; };
 		C161FB0F2380987B006184E8 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161FB0E2380987B006184E8 /* Publisher.swift */; };
 		C161FB11238098A5006184E8 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161FB10238098A5006184E8 /* Developer.swift */; };
+		C1EF4FB22382CF4600F23BC8 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF4FB12382CF4600F23BC8 /* GameDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C161FB0C238097CA006184E8 /* Platforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platforms.swift; sourceTree = "<group>"; };
 		C161FB0E2380987B006184E8 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		C161FB10238098A5006184E8 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		C1EF4FB12382CF4600F23BC8 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				C161FAF62380842F006184E8 /* SceneDelegate.swift */,
 				C161FAF82380842F006184E8 /* GamesViewController.swift */,
 				C161FAFA2380842F006184E8 /* Main.storyboard */,
+				C1EF4FB12382CF4600F23BC8 /* GameDetailsViewController.swift */,
 				C161FB0823809309006184E8 /* Games.swift */,
 				C161FB0E2380987B006184E8 /* Publisher.swift */,
 				C161FB10238098A5006184E8 /* Developer.swift */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C161FB11238098A5006184E8 /* Developer.swift in Sources */,
+				C1EF4FB22382CF4600F23BC8 /* GameDetailsViewController.swift in Sources */,
 				C161FAF92380842F006184E8 /* GamesViewController.swift in Sources */,
 				C161FAF52380842F006184E8 /* AppDelegate.swift in Sources */,
 				C161FB0D238097CA006184E8 /* Platforms.swift in Sources */,

@@ -17,6 +17,7 @@ class GamesViewController: UIViewController {
             gameTableView.reloadData()
         }
     }
+    var gameEntry = Game.games
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +30,15 @@ class GamesViewController: UIViewController {
 
 extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return games.count
+        print(games.count)
+        print(gameEntry.count)
+        return gameEntry.count
+        //return games.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath)
-        let game = games[indexPath.row]
+        let game = gameEntry[indexPath.row]
+        print(indexPath.row)
         cell.textLabel?.text = game.name
         cell.detailTextLabel?.text = game.description
         return cell

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Platform {
+enum Platform: String {
     case xBox
     case xBox360
     case xBoxOne

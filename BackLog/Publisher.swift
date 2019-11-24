@@ -10,7 +10,7 @@ import Foundation
 
 // **numbers should be spelled in full**
 
-enum Publisher {
+enum Publisher: String {
     case electronicArts
     case activisionBlizzard
     case valve
@@ -26,7 +26,7 @@ enum Publisher {
     case rockstarGames
     case twoKGames
     case squareEnix
-    case sonyInteractiveEntertainment
+    case sonyInteractiveEntertainment = "Sony Interactive Entertainment"
     case snk
     case sega
     case rovio
@@ -34,8 +34,8 @@ enum Publisher {
     case rare
     case popCapGames
     case paradox
-    case nintendo
-    case microsoft
+    case nintendo = "Nintendo"
+    case microsoft = "Microsoft"
     case levelFive
     case konami
     case bethesda

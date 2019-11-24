@@ -21,13 +21,19 @@ class GamesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("There are \(Game.games.count) games, currently in the struct.")
-
         gameTableView.dataSource = self
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let gameDetailVC = segue.destination as? GameDetailsViewController,
+            let indexPath = gameTableView.indexPathForSelectedRow else {
+                fatalError("Did not prepare for segue correctly")
+        }
+        let game = gameEntry[indexPath.row]
+        gameDetailVC.game = game
+        
+    }
 }
-
+//MARK: Extensions
 extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(games.count)
@@ -36,11 +42,14 @@ extension GamesViewController: UITableViewDataSource {
         //return games.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath) as? GameCell else {
+            fatalError("Failed to dequeue GameCell")
+        }
         let game = gameEntry[indexPath.row]
-        print(indexPath.row)
-        cell.textLabel?.text = game.name
-        cell.detailTextLabel?.text = game.description
+        cell.configureCell(for: game)
+        
+        
         return cell
     }
 }
+

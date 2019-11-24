@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum Genre {
+enum Genre: String {
     
+    case actionAdventure = "Action-Adventure"
     case fps
     case rts
     case moba

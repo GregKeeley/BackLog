@@ -8,6 +8,8 @@
 
 import Foundation
 
-enum Developer {
-    case bungie
+enum Developer: String {
+    case bungie = "Bungie"
+    case nextLevelGames = "Next Level Games"
+    case insomniac = "insomniac"
 }
